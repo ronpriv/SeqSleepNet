@@ -1,0 +1,665 @@
+TensorFlow 2.0 Upgrade Script
+-----------------------------
+Converted 22 files
+Detected 64 issues that require attention
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+File: tensorflow_net/Multitask-E2E-ARNN/nn_basic_layers.py
+--------------------------------------------------------------------------------
+tensorflow_net/Multitask-E2E-ARNN/nn_basic_layers.py:13:18: WARNING: tf.get_variable requires manual check. tf.get_variable returns ResourceVariables by default in 2.0, which have well-defined semantics and are stricter about shapes. You can disable this behavior by passing use_resource=False, or by calling tf.compat.v1.disable_resource_variables().
+tensorflow_net/Multitask-E2E-ARNN/nn_basic_layers.py:14:17: WARNING: tf.get_variable requires manual check. tf.get_variable returns ResourceVariables by default in 2.0, which have well-defined semantics and are stricter about shapes. You can disable this behavior by passing use_resource=False, or by calling tf.compat.v1.disable_resource_variables().
+tensorflow_net/Multitask-E2E-ARNN/nn_basic_layers.py:34:14: WARNING: Using member tf.contrib.rnn.DropoutWrapper in deprecated module tf.contrib.rnn. (Manual edit required) tf.contrib.rnn.* has been deprecated, and widely used cells/functions will be moved to tensorflow/addons repository. Please check it there and file Github issues if necessary.
+tensorflow_net/Multitask-E2E-ARNN/nn_basic_layers.py:34:14: ERROR: Using member tf.contrib.rnn.DropoutWrapper in deprecated module tf.contrib. tf.contrib.rnn.DropoutWrapper cannot be converted automatically. tf.contrib will not be distributed with TensorFlow 2.0, please consider an alternative in non-contrib TensorFlow, a community-maintained repository such as tensorflow/addons, or fork the required code.
+tensorflow_net/Multitask-E2E-ARNN/nn_basic_layers.py:35:14: WARNING: Using member tf.contrib.rnn.DropoutWrapper in deprecated module tf.contrib.rnn. (Manual edit required) tf.contrib.rnn.* has been deprecated, and widely used cells/functions will be moved to tensorflow/addons repository. Please check it there and file Github issues if necessary.
+tensorflow_net/Multitask-E2E-ARNN/nn_basic_layers.py:35:14: ERROR: Using member tf.contrib.rnn.DropoutWrapper in deprecated module tf.contrib. tf.contrib.rnn.DropoutWrapper cannot be converted automatically. tf.contrib will not be distributed with TensorFlow 2.0, please consider an alternative in non-contrib TensorFlow, a community-maintained repository such as tensorflow/addons, or fork the required code.
+tensorflow_net/Multitask-E2E-ARNN/nn_basic_layers.py:36:14: WARNING: Using member tf.contrib.rnn.DropoutWrapper in deprecated module tf.contrib.rnn. (Manual edit required) tf.contrib.rnn.* has been deprecated, and widely used cells/functions will be moved to tensorflow/addons repository. Please check it there and file Github issues if necessary.
+tensorflow_net/Multitask-E2E-ARNN/nn_basic_layers.py:36:14: ERROR: Using member tf.contrib.rnn.DropoutWrapper in deprecated module tf.contrib. tf.contrib.rnn.DropoutWrapper cannot be converted automatically. tf.contrib will not be distributed with TensorFlow 2.0, please consider an alternative in non-contrib TensorFlow, a community-maintained repository such as tensorflow/addons, or fork the required code.
+tensorflow_net/Multitask-E2E-ARNN/nn_basic_layers.py:37:14: WARNING: Using member tf.contrib.rnn.DropoutWrapper in deprecated module tf.contrib.rnn. (Manual edit required) tf.contrib.rnn.* has been deprecated, and widely used cells/functions will be moved to tensorflow/addons repository. Please check it there and file Github issues if necessary.
+tensorflow_net/Multitask-E2E-ARNN/nn_basic_layers.py:37:14: ERROR: Using member tf.contrib.rnn.DropoutWrapper in deprecated module tf.contrib. tf.contrib.rnn.DropoutWrapper cannot be converted automatically. tf.contrib will not be distributed with TensorFlow 2.0, please consider an alternative in non-contrib TensorFlow, a community-maintained repository such as tensorflow/addons, or fork the required code.
+tensorflow_net/Multitask-E2E-ARNN/nn_basic_layers.py:104:14: WARNING: Using member tf.contrib.rnn.DropoutWrapper in deprecated module tf.contrib.rnn. (Manual edit required) tf.contrib.rnn.* has been deprecated, and widely used cells/functions will be moved to tensorflow/addons repository. Please check it there and file Github issues if necessary.
+tensorflow_net/Multitask-E2E-ARNN/nn_basic_layers.py:104:14: ERROR: Using member tf.contrib.rnn.DropoutWrapper in deprecated module tf.contrib. tf.contrib.rnn.DropoutWrapper cannot be converted automatically. tf.contrib will not be distributed with TensorFlow 2.0, please consider an alternative in non-contrib TensorFlow, a community-maintained repository such as tensorflow/addons, or fork the required code.
+tensorflow_net/Multitask-E2E-ARNN/nn_basic_layers.py:105:14: WARNING: Using member tf.contrib.rnn.DropoutWrapper in deprecated module tf.contrib.rnn. (Manual edit required) tf.contrib.rnn.* has been deprecated, and widely used cells/functions will be moved to tensorflow/addons repository. Please check it there and file Github issues if necessary.
+tensorflow_net/Multitask-E2E-ARNN/nn_basic_layers.py:105:14: ERROR: Using member tf.contrib.rnn.DropoutWrapper in deprecated module tf.contrib. tf.contrib.rnn.DropoutWrapper cannot be converted automatically. tf.contrib will not be distributed with TensorFlow 2.0, please consider an alternative in non-contrib TensorFlow, a community-maintained repository such as tensorflow/addons, or fork the required code.
+tensorflow_net/Multitask-E2E-ARNN/nn_basic_layers.py:106:14: WARNING: Using member tf.contrib.rnn.DropoutWrapper in deprecated module tf.contrib.rnn. (Manual edit required) tf.contrib.rnn.* has been deprecated, and widely used cells/functions will be moved to tensorflow/addons repository. Please check it there and file Github issues if necessary.
+tensorflow_net/Multitask-E2E-ARNN/nn_basic_layers.py:106:14: ERROR: Using member tf.contrib.rnn.DropoutWrapper in deprecated module tf.contrib. tf.contrib.rnn.DropoutWrapper cannot be converted automatically. tf.contrib will not be distributed with TensorFlow 2.0, please consider an alternative in non-contrib TensorFlow, a community-maintained repository such as tensorflow/addons, or fork the required code.
+tensorflow_net/Multitask-E2E-ARNN/nn_basic_layers.py:107:14: WARNING: Using member tf.contrib.rnn.DropoutWrapper in deprecated module tf.contrib.rnn. (Manual edit required) tf.contrib.rnn.* has been deprecated, and widely used cells/functions will be moved to tensorflow/addons repository. Please check it there and file Github issues if necessary.
+tensorflow_net/Multitask-E2E-ARNN/nn_basic_layers.py:107:14: ERROR: Using member tf.contrib.rnn.DropoutWrapper in deprecated module tf.contrib. tf.contrib.rnn.DropoutWrapper cannot be converted automatically. tf.contrib will not be distributed with TensorFlow 2.0, please consider an alternative in non-contrib TensorFlow, a community-maintained repository such as tensorflow/addons, or fork the required code.
+--------------------------------------------------------------------------------
+File: tensorflow_net/Multitask-E2E-ARNN/train_multitask_arnn_sleep.py
+--------------------------------------------------------------------------------
+tensorflow_net/Multitask-E2E-ARNN/train_multitask_arnn_sleep.py:345:36: WARNING: *.save requires manual check. (This warning is only applicable if the code saves a tf.Keras model) Keras model.save now saves to the Tensorflow SavedModel format by default, instead of HDF5. To continue saving to HDF5, add the argument save_format='h5' to the save() function.
+--------------------------------------------------------------------------------
+File: tensorflow_net/E2E-ARNN/train_arnn_sleep.py
+--------------------------------------------------------------------------------
+tensorflow_net/E2E-ARNN/train_arnn_sleep.py:333:36: WARNING: *.save requires manual check. (This warning is only applicable if the code saves a tf.Keras model) Keras model.save now saves to the Tensorflow SavedModel format by default, instead of HDF5. To continue saving to HDF5, add the argument save_format='h5' to the save() function.
+--------------------------------------------------------------------------------
+File: tensorflow_net/E2E-ARNN/nn_basic_layers.py
+--------------------------------------------------------------------------------
+tensorflow_net/E2E-ARNN/nn_basic_layers.py:10:18: WARNING: tf.get_variable requires manual check. tf.get_variable returns ResourceVariables by default in 2.0, which have well-defined semantics and are stricter about shapes. You can disable this behavior by passing use_resource=False, or by calling tf.compat.v1.disable_resource_variables().
+tensorflow_net/E2E-ARNN/nn_basic_layers.py:11:17: WARNING: tf.get_variable requires manual check. tf.get_variable returns ResourceVariables by default in 2.0, which have well-defined semantics and are stricter about shapes. You can disable this behavior by passing use_resource=False, or by calling tf.compat.v1.disable_resource_variables().
+tensorflow_net/E2E-ARNN/nn_basic_layers.py:31:14: WARNING: Using member tf.contrib.rnn.DropoutWrapper in deprecated module tf.contrib.rnn. (Manual edit required) tf.contrib.rnn.* has been deprecated, and widely used cells/functions will be moved to tensorflow/addons repository. Please check it there and file Github issues if necessary.
+tensorflow_net/E2E-ARNN/nn_basic_layers.py:31:14: ERROR: Using member tf.contrib.rnn.DropoutWrapper in deprecated module tf.contrib. tf.contrib.rnn.DropoutWrapper cannot be converted automatically. tf.contrib will not be distributed with TensorFlow 2.0, please consider an alternative in non-contrib TensorFlow, a community-maintained repository such as tensorflow/addons, or fork the required code.
+tensorflow_net/E2E-ARNN/nn_basic_layers.py:32:14: WARNING: Using member tf.contrib.rnn.DropoutWrapper in deprecated module tf.contrib.rnn. (Manual edit required) tf.contrib.rnn.* has been deprecated, and widely used cells/functions will be moved to tensorflow/addons repository. Please check it there and file Github issues if necessary.
+tensorflow_net/E2E-ARNN/nn_basic_layers.py:32:14: ERROR: Using member tf.contrib.rnn.DropoutWrapper in deprecated module tf.contrib. tf.contrib.rnn.DropoutWrapper cannot be converted automatically. tf.contrib will not be distributed with TensorFlow 2.0, please consider an alternative in non-contrib TensorFlow, a community-maintained repository such as tensorflow/addons, or fork the required code.
+tensorflow_net/E2E-ARNN/nn_basic_layers.py:33:14: WARNING: Using member tf.contrib.rnn.DropoutWrapper in deprecated module tf.contrib.rnn. (Manual edit required) tf.contrib.rnn.* has been deprecated, and widely used cells/functions will be moved to tensorflow/addons repository. Please check it there and file Github issues if necessary.
+tensorflow_net/E2E-ARNN/nn_basic_layers.py:33:14: ERROR: Using member tf.contrib.rnn.DropoutWrapper in deprecated module tf.contrib. tf.contrib.rnn.DropoutWrapper cannot be converted automatically. tf.contrib will not be distributed with TensorFlow 2.0, please consider an alternative in non-contrib TensorFlow, a community-maintained repository such as tensorflow/addons, or fork the required code.
+tensorflow_net/E2E-ARNN/nn_basic_layers.py:34:14: WARNING: Using member tf.contrib.rnn.DropoutWrapper in deprecated module tf.contrib.rnn. (Manual edit required) tf.contrib.rnn.* has been deprecated, and widely used cells/functions will be moved to tensorflow/addons repository. Please check it there and file Github issues if necessary.
+tensorflow_net/E2E-ARNN/nn_basic_layers.py:34:14: ERROR: Using member tf.contrib.rnn.DropoutWrapper in deprecated module tf.contrib. tf.contrib.rnn.DropoutWrapper cannot be converted automatically. tf.contrib will not be distributed with TensorFlow 2.0, please consider an alternative in non-contrib TensorFlow, a community-maintained repository such as tensorflow/addons, or fork the required code.
+tensorflow_net/E2E-ARNN/nn_basic_layers.py:101:14: WARNING: Using member tf.contrib.rnn.DropoutWrapper in deprecated module tf.contrib.rnn. (Manual edit required) tf.contrib.rnn.* has been deprecated, and widely used cells/functions will be moved to tensorflow/addons repository. Please check it there and file Github issues if necessary.
+tensorflow_net/E2E-ARNN/nn_basic_layers.py:101:14: ERROR: Using member tf.contrib.rnn.DropoutWrapper in deprecated module tf.contrib. tf.contrib.rnn.DropoutWrapper cannot be converted automatically. tf.contrib will not be distributed with TensorFlow 2.0, please consider an alternative in non-contrib TensorFlow, a community-maintained repository such as tensorflow/addons, or fork the required code.
+tensorflow_net/E2E-ARNN/nn_basic_layers.py:102:14: WARNING: Using member tf.contrib.rnn.DropoutWrapper in deprecated module tf.contrib.rnn. (Manual edit required) tf.contrib.rnn.* has been deprecated, and widely used cells/functions will be moved to tensorflow/addons repository. Please check it there and file Github issues if necessary.
+tensorflow_net/E2E-ARNN/nn_basic_layers.py:102:14: ERROR: Using member tf.contrib.rnn.DropoutWrapper in deprecated module tf.contrib. tf.contrib.rnn.DropoutWrapper cannot be converted automatically. tf.contrib will not be distributed with TensorFlow 2.0, please consider an alternative in non-contrib TensorFlow, a community-maintained repository such as tensorflow/addons, or fork the required code.
+tensorflow_net/E2E-ARNN/nn_basic_layers.py:103:14: WARNING: Using member tf.contrib.rnn.DropoutWrapper in deprecated module tf.contrib.rnn. (Manual edit required) tf.contrib.rnn.* has been deprecated, and widely used cells/functions will be moved to tensorflow/addons repository. Please check it there and file Github issues if necessary.
+tensorflow_net/E2E-ARNN/nn_basic_layers.py:103:14: ERROR: Using member tf.contrib.rnn.DropoutWrapper in deprecated module tf.contrib. tf.contrib.rnn.DropoutWrapper cannot be converted automatically. tf.contrib will not be distributed with TensorFlow 2.0, please consider an alternative in non-contrib TensorFlow, a community-maintained repository such as tensorflow/addons, or fork the required code.
+tensorflow_net/E2E-ARNN/nn_basic_layers.py:104:14: WARNING: Using member tf.contrib.rnn.DropoutWrapper in deprecated module tf.contrib.rnn. (Manual edit required) tf.contrib.rnn.* has been deprecated, and widely used cells/functions will be moved to tensorflow/addons repository. Please check it there and file Github issues if necessary.
+tensorflow_net/E2E-ARNN/nn_basic_layers.py:104:14: ERROR: Using member tf.contrib.rnn.DropoutWrapper in deprecated module tf.contrib. tf.contrib.rnn.DropoutWrapper cannot be converted automatically. tf.contrib will not be distributed with TensorFlow 2.0, please consider an alternative in non-contrib TensorFlow, a community-maintained repository such as tensorflow/addons, or fork the required code.
+--------------------------------------------------------------------------------
+File: tensorflow_net/SeqSleepNet/nn_basic_layers.py
+--------------------------------------------------------------------------------
+tensorflow_net/SeqSleepNet/nn_basic_layers.py:15:18: WARNING: tf.get_variable requires manual check. tf.get_variable returns ResourceVariables by default in 2.0, which have well-defined semantics and are stricter about shapes. You can disable this behavior by passing use_resource=False, or by calling tf.compat.v1.disable_resource_variables().
+tensorflow_net/SeqSleepNet/nn_basic_layers.py:16:17: WARNING: tf.get_variable requires manual check. tf.get_variable returns ResourceVariables by default in 2.0, which have well-defined semantics and are stricter about shapes. You can disable this behavior by passing use_resource=False, or by calling tf.compat.v1.disable_resource_variables().
+tensorflow_net/SeqSleepNet/nn_basic_layers.py:65:14: WARNING: Using member tf.contrib.rnn.DropoutWrapper in deprecated module tf.contrib.rnn. (Manual edit required) tf.contrib.rnn.* has been deprecated, and widely used cells/functions will be moved to tensorflow/addons repository. Please check it there and file Github issues if necessary.
+tensorflow_net/SeqSleepNet/nn_basic_layers.py:65:14: ERROR: Using member tf.contrib.rnn.DropoutWrapper in deprecated module tf.contrib. tf.contrib.rnn.DropoutWrapper cannot be converted automatically. tf.contrib will not be distributed with TensorFlow 2.0, please consider an alternative in non-contrib TensorFlow, a community-maintained repository such as tensorflow/addons, or fork the required code.
+tensorflow_net/SeqSleepNet/nn_basic_layers.py:66:14: WARNING: Using member tf.contrib.rnn.DropoutWrapper in deprecated module tf.contrib.rnn. (Manual edit required) tf.contrib.rnn.* has been deprecated, and widely used cells/functions will be moved to tensorflow/addons repository. Please check it there and file Github issues if necessary.
+tensorflow_net/SeqSleepNet/nn_basic_layers.py:66:14: ERROR: Using member tf.contrib.rnn.DropoutWrapper in deprecated module tf.contrib. tf.contrib.rnn.DropoutWrapper cannot be converted automatically. tf.contrib will not be distributed with TensorFlow 2.0, please consider an alternative in non-contrib TensorFlow, a community-maintained repository such as tensorflow/addons, or fork the required code.
+tensorflow_net/SeqSleepNet/nn_basic_layers.py:67:14: WARNING: Using member tf.contrib.rnn.DropoutWrapper in deprecated module tf.contrib.rnn. (Manual edit required) tf.contrib.rnn.* has been deprecated, and widely used cells/functions will be moved to tensorflow/addons repository. Please check it there and file Github issues if necessary.
+tensorflow_net/SeqSleepNet/nn_basic_layers.py:67:14: ERROR: Using member tf.contrib.rnn.DropoutWrapper in deprecated module tf.contrib. tf.contrib.rnn.DropoutWrapper cannot be converted automatically. tf.contrib will not be distributed with TensorFlow 2.0, please consider an alternative in non-contrib TensorFlow, a community-maintained repository such as tensorflow/addons, or fork the required code.
+tensorflow_net/SeqSleepNet/nn_basic_layers.py:68:14: WARNING: Using member tf.contrib.rnn.DropoutWrapper in deprecated module tf.contrib.rnn. (Manual edit required) tf.contrib.rnn.* has been deprecated, and widely used cells/functions will be moved to tensorflow/addons repository. Please check it there and file Github issues if necessary.
+tensorflow_net/SeqSleepNet/nn_basic_layers.py:68:14: ERROR: Using member tf.contrib.rnn.DropoutWrapper in deprecated module tf.contrib. tf.contrib.rnn.DropoutWrapper cannot be converted automatically. tf.contrib will not be distributed with TensorFlow 2.0, please consider an alternative in non-contrib TensorFlow, a community-maintained repository such as tensorflow/addons, or fork the required code.
+tensorflow_net/SeqSleepNet/nn_basic_layers.py:95:14: WARNING: Using member tf.contrib.rnn.DropoutWrapper in deprecated module tf.contrib.rnn. (Manual edit required) tf.contrib.rnn.* has been deprecated, and widely used cells/functions will be moved to tensorflow/addons repository. Please check it there and file Github issues if necessary.
+tensorflow_net/SeqSleepNet/nn_basic_layers.py:95:14: ERROR: Using member tf.contrib.rnn.DropoutWrapper in deprecated module tf.contrib. tf.contrib.rnn.DropoutWrapper cannot be converted automatically. tf.contrib will not be distributed with TensorFlow 2.0, please consider an alternative in non-contrib TensorFlow, a community-maintained repository such as tensorflow/addons, or fork the required code.
+tensorflow_net/SeqSleepNet/nn_basic_layers.py:96:14: WARNING: Using member tf.contrib.rnn.DropoutWrapper in deprecated module tf.contrib.rnn. (Manual edit required) tf.contrib.rnn.* has been deprecated, and widely used cells/functions will be moved to tensorflow/addons repository. Please check it there and file Github issues if necessary.
+tensorflow_net/SeqSleepNet/nn_basic_layers.py:96:14: ERROR: Using member tf.contrib.rnn.DropoutWrapper in deprecated module tf.contrib. tf.contrib.rnn.DropoutWrapper cannot be converted automatically. tf.contrib will not be distributed with TensorFlow 2.0, please consider an alternative in non-contrib TensorFlow, a community-maintained repository such as tensorflow/addons, or fork the required code.
+tensorflow_net/SeqSleepNet/nn_basic_layers.py:97:14: WARNING: Using member tf.contrib.rnn.DropoutWrapper in deprecated module tf.contrib.rnn. (Manual edit required) tf.contrib.rnn.* has been deprecated, and widely used cells/functions will be moved to tensorflow/addons repository. Please check it there and file Github issues if necessary.
+tensorflow_net/SeqSleepNet/nn_basic_layers.py:97:14: ERROR: Using member tf.contrib.rnn.DropoutWrapper in deprecated module tf.contrib. tf.contrib.rnn.DropoutWrapper cannot be converted automatically. tf.contrib will not be distributed with TensorFlow 2.0, please consider an alternative in non-contrib TensorFlow, a community-maintained repository such as tensorflow/addons, or fork the required code.
+tensorflow_net/SeqSleepNet/nn_basic_layers.py:98:14: WARNING: Using member tf.contrib.rnn.DropoutWrapper in deprecated module tf.contrib.rnn. (Manual edit required) tf.contrib.rnn.* has been deprecated, and widely used cells/functions will be moved to tensorflow/addons repository. Please check it there and file Github issues if necessary.
+tensorflow_net/SeqSleepNet/nn_basic_layers.py:98:14: ERROR: Using member tf.contrib.rnn.DropoutWrapper in deprecated module tf.contrib. tf.contrib.rnn.DropoutWrapper cannot be converted automatically. tf.contrib will not be distributed with TensorFlow 2.0, please consider an alternative in non-contrib TensorFlow, a community-maintained repository such as tensorflow/addons, or fork the required code.
+--------------------------------------------------------------------------------
+File: tensorflow_net/SeqSleepNet/bnlstm.py
+--------------------------------------------------------------------------------
+tensorflow_net/SeqSleepNet/bnlstm.py:33:20: WARNING: tf.get_variable requires manual check. tf.get_variable returns ResourceVariables by default in 2.0, which have well-defined semantics and are stricter about shapes. You can disable this behavior by passing use_resource=False, or by calling tf.compat.v1.disable_resource_variables().
+tensorflow_net/SeqSleepNet/bnlstm.py:37:25: WARNING: tf.get_variable requires manual check. tf.get_variable returns ResourceVariables by default in 2.0, which have well-defined semantics and are stricter about shapes. You can disable this behavior by passing use_resource=False, or by calling tf.compat.v1.disable_resource_variables().
+tensorflow_net/SeqSleepNet/bnlstm.py:39:25: WARNING: tf.get_variable requires manual check. tf.get_variable returns ResourceVariables by default in 2.0, which have well-defined semantics and are stricter about shapes. You can disable this behavior by passing use_resource=False, or by calling tf.compat.v1.disable_resource_variables().
+tensorflow_net/SeqSleepNet/bnlstm.py:41:33: WARNING: tf.get_variable requires manual check. tf.get_variable returns ResourceVariables by default in 2.0, which have well-defined semantics and are stricter about shapes. You can disable this behavior by passing use_resource=False, or by calling tf.compat.v1.disable_resource_variables().
+tensorflow_net/SeqSleepNet/bnlstm.py:42:32: WARNING: tf.get_variable requires manual check. tf.get_variable returns ResourceVariables by default in 2.0, which have well-defined semantics and are stricter about shapes. You can disable this behavior by passing use_resource=False, or by calling tf.compat.v1.disable_resource_variables().
+tensorflow_net/SeqSleepNet/bnlstm.py:68:19: WARNING: tf.get_variable requires manual check. tf.get_variable returns ResourceVariables by default in 2.0, which have well-defined semantics and are stricter about shapes. You can disable this behavior by passing use_resource=False, or by calling tf.compat.v1.disable_resource_variables().
+tensorflow_net/SeqSleepNet/bnlstm.py:71:19: WARNING: tf.get_variable requires manual check. tf.get_variable returns ResourceVariables by default in 2.0, which have well-defined semantics and are stricter about shapes. You can disable this behavior by passing use_resource=False, or by calling tf.compat.v1.disable_resource_variables().
+--------------------------------------------------------------------------------
+File: tensorflow_net/SeqSleepNet/train_seqsleepnet.py
+--------------------------------------------------------------------------------
+tensorflow_net/SeqSleepNet/train_seqsleepnet.py:360:36: WARNING: *.save requires manual check. (This warning is only applicable if the code saves a tf.Keras model) Keras model.save now saves to the Tensorflow SavedModel format by default, instead of HDF5. To continue saving to HDF5, add the argument save_format='h5' to the save() function.
+================================================================================
+Detailed log follows:
+
+================================================================================
+================================================================================
+Input tree: 'tensorflow_net/'
+================================================================================
+--------------------------------------------------------------------------------
+Processing file 'tensorflow_net/Multitask-E2E-ARNN/multitask_arnn_sleep.py'
+ outputting to 'tensorflow_net_new/Multitask-E2E-ARNN/multitask_arnn_sleep.py'
+--------------------------------------------------------------------------------
+
+13:23: INFO: Renamed 'tf.placeholder' to 'tf.compat.v1.placeholder'
+14:23: INFO: Renamed 'tf.placeholder' to 'tf.compat.v1.placeholder'
+15:37: INFO: Renamed 'tf.placeholder' to 'tf.compat.v1.placeholder'
+17:29: INFO: Renamed 'tf.placeholder' to 'tf.compat.v1.placeholder'
+29:34: INFO: Renamed 'tf.variable_scope' to 'tf.compat.v1.variable_scope'
+33:36: INFO: Renamed 'tf.random_normal' to 'tf.random.normal'
+42:38: INFO: Renamed 'tf.variable_scope' to 'tf.compat.v1.variable_scope'
+46:40: INFO: Renamed 'tf.random_normal' to 'tf.random.normal'
+55:38: INFO: Renamed 'tf.variable_scope' to 'tf.compat.v1.variable_scope'
+59:40: INFO: Renamed 'tf.random_normal' to 'tf.random.normal'
+75:34: INFO: Renamed 'tf.variable_scope' to 'tf.compat.v1.variable_scope'
+89:34: INFO: Renamed 'tf.variable_scope' to 'tf.compat.v1.variable_scope'
+96:34: INFO: Renamed 'tf.variable_scope' to 'tf.compat.v1.variable_scope'
+103:25: INFO: Added keywords to args of function 'tf.argmax'
+109:34: INFO: `name` passed to `name_scope`. Because you may be re-entering an existing scope, it is not safe to convert automatically,  the v2 name_scope does not support re-entering scopes by name.
+
+109:34: INFO: Renamed 'tf.name_scope' to 'tf.compat.v1.name_scope'
+111:32: INFO: Changing labels arg of tf.nn.softmax_cross_entropy_with_logits to tf.stop_gradient(labels). Please check this transformation.
+
+112:32: INFO: Added keywords to args of function 'tf.reduce_sum'
+116:34: INFO: `name` passed to `name_scope`. Because you may be re-entering an existing scope, it is not safe to convert automatically,  the v2 name_scope does not support re-entering scopes by name.
+
+116:34: INFO: Renamed 'tf.name_scope' to 'tf.compat.v1.name_scope'
+117:21: INFO: Renamed 'tf.trainable_variables' to 'tf.compat.v1.trainable_variables'
+118:30: INFO: Renamed 'tf.get_collection' to 'tf.compat.v1.get_collection'
+118:48: INFO: Renamed 'tf.GraphKeys' to 'tf.compat.v1.GraphKeys'
+119:30: INFO: Renamed 'tf.get_collection' to 'tf.compat.v1.get_collection'
+119:48: INFO: Renamed 'tf.GraphKeys' to 'tf.compat.v1.GraphKeys'
+120:30: INFO: Renamed 'tf.get_collection' to 'tf.compat.v1.get_collection'
+120:48: INFO: Renamed 'tf.GraphKeys' to 'tf.compat.v1.GraphKeys'
+127:34: INFO: `name` passed to `name_scope`. Because you may be re-entering an existing scope, it is not safe to convert automatically,  the v2 name_scope does not support re-entering scopes by name.
+
+127:34: INFO: Renamed 'tf.name_scope' to 'tf.compat.v1.name_scope'
+129:69: INFO: Added keywords to args of function 'tf.argmax'
+130:29: INFO: Added keywords to args of function 'tf.reduce_mean'
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+Processing file 'tensorflow_net/Multitask-E2E-ARNN/nn_basic_layers.py'
+ outputting to 'tensorflow_net_new/Multitask-E2E-ARNN/nn_basic_layers.py'
+--------------------------------------------------------------------------------
+
+11:9: INFO: Renamed 'tf.variable_scope' to 'tf.compat.v1.variable_scope'
+13:18: WARNING: tf.get_variable requires manual check. tf.get_variable returns ResourceVariables by default in 2.0, which have well-defined semantics and are stricter about shapes. You can disable this behavior by passing use_resource=False, or by calling tf.compat.v1.disable_resource_variables().
+13:18: INFO: Renamed 'tf.get_variable' to 'tf.compat.v1.get_variable'
+14:17: WARNING: tf.get_variable requires manual check. tf.get_variable returns ResourceVariables by default in 2.0, which have well-defined semantics and are stricter about shapes. You can disable this behavior by passing use_resource=False, or by calling tf.compat.v1.disable_resource_variables().
+14:17: INFO: Renamed 'tf.get_variable' to 'tf.compat.v1.get_variable'
+17:14: INFO: Renamed 'tf.nn.xw_plus_b' to 'tf.compat.v1.nn.xw_plus_b'
+26:14: INFO: Renamed 'tf.contrib.rnn.GRUCell' to 'tf.compat.v1.nn.rnn_cell.GRUCell'
+27:14: INFO: Renamed 'tf.contrib.rnn.GRUCell' to 'tf.compat.v1.nn.rnn_cell.GRUCell'
+29:18: INFO: Renamed 'tf.contrib.rnn.MultiRNNCell' to 'tf.compat.v1.nn.rnn_cell.MultiRNNCell'
+31:18: INFO: Renamed 'tf.contrib.rnn.MultiRNNCell' to 'tf.compat.v1.nn.rnn_cell.MultiRNNCell'
+34:14: WARNING: Using member tf.contrib.rnn.DropoutWrapper in deprecated module tf.contrib.rnn. (Manual edit required) tf.contrib.rnn.* has been deprecated, and widely used cells/functions will be moved to tensorflow/addons repository. Please check it there and file Github issues if necessary.
+34:14: ERROR: Using member tf.contrib.rnn.DropoutWrapper in deprecated module tf.contrib. tf.contrib.rnn.DropoutWrapper cannot be converted automatically. tf.contrib will not be distributed with TensorFlow 2.0, please consider an alternative in non-contrib TensorFlow, a community-maintained repository such as tensorflow/addons, or fork the required code.
+35:14: WARNING: Using member tf.contrib.rnn.DropoutWrapper in deprecated module tf.contrib.rnn. (Manual edit required) tf.contrib.rnn.* has been deprecated, and widely used cells/functions will be moved to tensorflow/addons repository. Please check it there and file Github issues if necessary.
+35:14: ERROR: Using member tf.contrib.rnn.DropoutWrapper in deprecated module tf.contrib. tf.contrib.rnn.DropoutWrapper cannot be converted automatically. tf.contrib will not be distributed with TensorFlow 2.0, please consider an alternative in non-contrib TensorFlow, a community-maintained repository such as tensorflow/addons, or fork the required code.
+36:14: WARNING: Using member tf.contrib.rnn.DropoutWrapper in deprecated module tf.contrib.rnn. (Manual edit required) tf.contrib.rnn.* has been deprecated, and widely used cells/functions will be moved to tensorflow/addons repository. Please check it there and file Github issues if necessary.
+36:14: ERROR: Using member tf.contrib.rnn.DropoutWrapper in deprecated module tf.contrib. tf.contrib.rnn.DropoutWrapper cannot be converted automatically. tf.contrib will not be distributed with TensorFlow 2.0, please consider an alternative in non-contrib TensorFlow, a community-maintained repository such as tensorflow/addons, or fork the required code.
+37:14: WARNING: Using member tf.contrib.rnn.DropoutWrapper in deprecated module tf.contrib.rnn. (Manual edit required) tf.contrib.rnn.* has been deprecated, and widely used cells/functions will be moved to tensorflow/addons repository. Please check it there and file Github issues if necessary.
+37:14: ERROR: Using member tf.contrib.rnn.DropoutWrapper in deprecated module tf.contrib. tf.contrib.rnn.DropoutWrapper cannot be converted automatically. tf.contrib will not be distributed with TensorFlow 2.0, please consider an alternative in non-contrib TensorFlow, a community-maintained repository such as tensorflow/addons, or fork the required code.
+44:20: INFO: Renamed 'tf.nn.bidirectional_dynamic_rnn' to 'tf.compat.v1.nn.bidirectional_dynamic_rnn'
+83:18: INFO: Renamed 'tf.contrib.rnn.GRUCell' to 'tf.compat.v1.nn.rnn_cell.GRUCell'
+84:18: INFO: Renamed 'tf.contrib.rnn.GRUCell' to 'tf.compat.v1.nn.rnn_cell.GRUCell'
+97:28: INFO: Renamed 'tf.contrib.rnn.GRUCell' to 'tf.compat.v1.nn.rnn_cell.GRUCell'
+98:28: INFO: Renamed 'tf.contrib.rnn.GRUCell' to 'tf.compat.v1.nn.rnn_cell.GRUCell'
+99:18: INFO: Renamed 'tf.contrib.rnn.MultiRNNCell' to 'tf.compat.v1.nn.rnn_cell.MultiRNNCell'
+100:18: INFO: Renamed 'tf.contrib.rnn.MultiRNNCell' to 'tf.compat.v1.nn.rnn_cell.MultiRNNCell'
+104:14: WARNING: Using member tf.contrib.rnn.DropoutWrapper in deprecated module tf.contrib.rnn. (Manual edit required) tf.contrib.rnn.* has been deprecated, and widely used cells/functions will be moved to tensorflow/addons repository. Please check it there and file Github issues if necessary.
+104:14: ERROR: Using member tf.contrib.rnn.DropoutWrapper in deprecated module tf.contrib. tf.contrib.rnn.DropoutWrapper cannot be converted automatically. tf.contrib will not be distributed with TensorFlow 2.0, please consider an alternative in non-contrib TensorFlow, a community-maintained repository such as tensorflow/addons, or fork the required code.
+105:14: WARNING: Using member tf.contrib.rnn.DropoutWrapper in deprecated module tf.contrib.rnn. (Manual edit required) tf.contrib.rnn.* has been deprecated, and widely used cells/functions will be moved to tensorflow/addons repository. Please check it there and file Github issues if necessary.
+105:14: ERROR: Using member tf.contrib.rnn.DropoutWrapper in deprecated module tf.contrib. tf.contrib.rnn.DropoutWrapper cannot be converted automatically. tf.contrib will not be distributed with TensorFlow 2.0, please consider an alternative in non-contrib TensorFlow, a community-maintained repository such as tensorflow/addons, or fork the required code.
+106:14: WARNING: Using member tf.contrib.rnn.DropoutWrapper in deprecated module tf.contrib.rnn. (Manual edit required) tf.contrib.rnn.* has been deprecated, and widely used cells/functions will be moved to tensorflow/addons repository. Please check it there and file Github issues if necessary.
+106:14: ERROR: Using member tf.contrib.rnn.DropoutWrapper in deprecated module tf.contrib. tf.contrib.rnn.DropoutWrapper cannot be converted automatically. tf.contrib will not be distributed with TensorFlow 2.0, please consider an alternative in non-contrib TensorFlow, a community-maintained repository such as tensorflow/addons, or fork the required code.
+107:14: WARNING: Using member tf.contrib.rnn.DropoutWrapper in deprecated module tf.contrib.rnn. (Manual edit required) tf.contrib.rnn.* has been deprecated, and widely used cells/functions will be moved to tensorflow/addons repository. Please check it there and file Github issues if necessary.
+107:14: ERROR: Using member tf.contrib.rnn.DropoutWrapper in deprecated module tf.contrib. tf.contrib.rnn.DropoutWrapper cannot be converted automatically. tf.contrib will not be distributed with TensorFlow 2.0, please consider an alternative in non-contrib TensorFlow, a community-maintained repository such as tensorflow/addons, or fork the required code.
+115:20: INFO: Renamed 'tf.nn.bidirectional_dynamic_rnn' to 'tf.compat.v1.nn.bidirectional_dynamic_rnn'
+203:26: INFO: Renamed 'tf.random_normal' to 'tf.random.normal'
+204:26: INFO: Renamed 'tf.random_normal' to 'tf.random.normal'
+205:26: INFO: Renamed 'tf.random_normal' to 'tf.random.normal'
+210:31: INFO: Added keywords to args of function 'tf.reduce_sum'
+213:13: INFO: Added keywords to args of function 'tf.reduce_sum'
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+Processing file 'tensorflow_net/Multitask-E2E-ARNN/train_multitask_arnn_sleep.py'
+ outputting to 'tensorflow_net_new/Multitask-E2E-ARNN/train_multitask_arnn_sleep.py'
+--------------------------------------------------------------------------------
+
+27:0: INFO: Renamed 'tf.app.flags' to 'tf.compat.v1.app.flags'
+28:0: INFO: Renamed 'tf.app.flags' to 'tf.compat.v1.app.flags'
+31:0: INFO: Renamed 'tf.app.flags' to 'tf.compat.v1.app.flags'
+32:0: INFO: Renamed 'tf.app.flags' to 'tf.compat.v1.app.flags'
+33:0: INFO: Renamed 'tf.app.flags' to 'tf.compat.v1.app.flags'
+34:0: INFO: Renamed 'tf.app.flags' to 'tf.compat.v1.app.flags'
+35:0: INFO: Renamed 'tf.app.flags' to 'tf.compat.v1.app.flags'
+36:0: INFO: Renamed 'tf.app.flags' to 'tf.compat.v1.app.flags'
+37:0: INFO: Renamed 'tf.app.flags' to 'tf.compat.v1.app.flags'
+38:0: INFO: Renamed 'tf.app.flags' to 'tf.compat.v1.app.flags'
+39:0: INFO: Renamed 'tf.app.flags' to 'tf.compat.v1.app.flags'
+40:0: INFO: Renamed 'tf.app.flags' to 'tf.compat.v1.app.flags'
+41:0: INFO: Renamed 'tf.app.flags' to 'tf.compat.v1.app.flags'
+43:0: INFO: Renamed 'tf.app.flags' to 'tf.compat.v1.app.flags'
+45:0: INFO: Renamed 'tf.app.flags' to 'tf.compat.v1.app.flags'
+47:0: INFO: Renamed 'tf.app.flags' to 'tf.compat.v1.app.flags'
+49:0: INFO: Renamed 'tf.app.flags' to 'tf.compat.v1.app.flags'
+50:0: INFO: Renamed 'tf.app.flags' to 'tf.compat.v1.app.flags'
+52:8: INFO: Renamed 'tf.app.flags' to 'tf.compat.v1.app.flags'
+229:19: INFO: Renamed 'tf.ConfigProto' to 'tf.compat.v1.ConfigProto'
+233:11: INFO: Renamed 'tf.Session' to 'tf.compat.v1.Session'
+239:20: INFO: Renamed 'tf.train.AdamOptimizer' to 'tf.compat.v1.train.AdamOptimizer'
+246:16: INFO: Renamed 'tf.train.Saver' to 'tf.compat.v1.train.Saver'
+246:31: INFO: Renamed 'tf.all_variables' to 'tf.compat.v1.all_variables'
+250:17: INFO: Renamed 'tf.initialize_all_variables' to 'tf.compat.v1.initialize_all_variables'
+335:31: INFO: Renamed 'tf.train.global_step' to 'tf.compat.v1.train.global_step'
+345:36: WARNING: *.save requires manual check. (This warning is only applicable if the code saves a tf.Keras model) Keras model.save now saves to the Tensorflow SavedModel format by default, instead of HDF5. To continue saving to HDF5, add the argument save_format='h5' to the save() function.
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+Processing file 'tensorflow_net/Multitask-E2E-ARNN/datagenerator_from_list_v2.py'
+ outputting to 'tensorflow_net_new/Multitask-E2E-ARNN/datagenerator_from_list_v2.py'
+--------------------------------------------------------------------------------
+
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+Processing file 'tensorflow_net/Multitask-E2E-ARNN/test_multitask_arnn_sleep.py'
+ outputting to 'tensorflow_net_new/Multitask-E2E-ARNN/test_multitask_arnn_sleep.py'
+--------------------------------------------------------------------------------
+
+29:0: INFO: Renamed 'tf.app.flags' to 'tf.compat.v1.app.flags'
+30:0: INFO: Renamed 'tf.app.flags' to 'tf.compat.v1.app.flags'
+33:0: INFO: Renamed 'tf.app.flags' to 'tf.compat.v1.app.flags'
+34:0: INFO: Renamed 'tf.app.flags' to 'tf.compat.v1.app.flags'
+35:0: INFO: Renamed 'tf.app.flags' to 'tf.compat.v1.app.flags'
+36:0: INFO: Renamed 'tf.app.flags' to 'tf.compat.v1.app.flags'
+37:0: INFO: Renamed 'tf.app.flags' to 'tf.compat.v1.app.flags'
+38:0: INFO: Renamed 'tf.app.flags' to 'tf.compat.v1.app.flags'
+39:0: INFO: Renamed 'tf.app.flags' to 'tf.compat.v1.app.flags'
+40:0: INFO: Renamed 'tf.app.flags' to 'tf.compat.v1.app.flags'
+42:0: INFO: Renamed 'tf.app.flags' to 'tf.compat.v1.app.flags'
+44:0: INFO: Renamed 'tf.app.flags' to 'tf.compat.v1.app.flags'
+46:0: INFO: Renamed 'tf.app.flags' to 'tf.compat.v1.app.flags'
+48:0: INFO: Renamed 'tf.app.flags' to 'tf.compat.v1.app.flags'
+49:0: INFO: Renamed 'tf.app.flags' to 'tf.compat.v1.app.flags'
+51:8: INFO: Renamed 'tf.app.flags' to 'tf.compat.v1.app.flags'
+190:19: INFO: Renamed 'tf.ConfigProto' to 'tf.compat.v1.ConfigProto'
+194:11: INFO: Renamed 'tf.Session' to 'tf.compat.v1.Session'
+200:20: INFO: Renamed 'tf.train.AdamOptimizer' to 'tf.compat.v1.train.AdamOptimizer'
+208:16: INFO: Renamed 'tf.train.Saver' to 'tf.compat.v1.train.Saver'
+208:31: INFO: Renamed 'tf.all_variables' to 'tf.compat.v1.all_variables'
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+Processing file 'tensorflow_net/Multitask-E2E-ARNN/multitask_arnn_sleep_config.py'
+ outputting to 'tensorflow_net_new/Multitask-E2E-ARNN/multitask_arnn_sleep_config.py'
+--------------------------------------------------------------------------------
+
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+Processing file 'tensorflow_net/Multitask-E2E-ARNN/filterbank_shape.py'
+ outputting to 'tensorflow_net_new/Multitask-E2E-ARNN/filterbank_shape.py'
+--------------------------------------------------------------------------------
+
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+Processing file 'tensorflow_net/E2E-ARNN/train_arnn_sleep.py'
+ outputting to 'tensorflow_net_new/E2E-ARNN/train_arnn_sleep.py'
+--------------------------------------------------------------------------------
+
+29:0: INFO: Renamed 'tf.app.flags' to 'tf.compat.v1.app.flags'
+30:0: INFO: Renamed 'tf.app.flags' to 'tf.compat.v1.app.flags'
+33:0: INFO: Renamed 'tf.app.flags' to 'tf.compat.v1.app.flags'
+34:0: INFO: Renamed 'tf.app.flags' to 'tf.compat.v1.app.flags'
+35:0: INFO: Renamed 'tf.app.flags' to 'tf.compat.v1.app.flags'
+36:0: INFO: Renamed 'tf.app.flags' to 'tf.compat.v1.app.flags'
+37:0: INFO: Renamed 'tf.app.flags' to 'tf.compat.v1.app.flags'
+38:0: INFO: Renamed 'tf.app.flags' to 'tf.compat.v1.app.flags'
+39:0: INFO: Renamed 'tf.app.flags' to 'tf.compat.v1.app.flags'
+40:0: INFO: Renamed 'tf.app.flags' to 'tf.compat.v1.app.flags'
+41:0: INFO: Renamed 'tf.app.flags' to 'tf.compat.v1.app.flags'
+42:0: INFO: Renamed 'tf.app.flags' to 'tf.compat.v1.app.flags'
+43:0: INFO: Renamed 'tf.app.flags' to 'tf.compat.v1.app.flags'
+45:0: INFO: Renamed 'tf.app.flags' to 'tf.compat.v1.app.flags'
+47:0: INFO: Renamed 'tf.app.flags' to 'tf.compat.v1.app.flags'
+49:0: INFO: Renamed 'tf.app.flags' to 'tf.compat.v1.app.flags'
+51:0: INFO: Renamed 'tf.app.flags' to 'tf.compat.v1.app.flags'
+52:0: INFO: Renamed 'tf.app.flags' to 'tf.compat.v1.app.flags'
+54:8: INFO: Renamed 'tf.app.flags' to 'tf.compat.v1.app.flags'
+231:19: INFO: Renamed 'tf.ConfigProto' to 'tf.compat.v1.ConfigProto'
+235:11: INFO: Renamed 'tf.Session' to 'tf.compat.v1.Session'
+241:20: INFO: Renamed 'tf.train.AdamOptimizer' to 'tf.compat.v1.train.AdamOptimizer'
+248:16: INFO: Renamed 'tf.train.Saver' to 'tf.compat.v1.train.Saver'
+248:31: INFO: Renamed 'tf.all_variables' to 'tf.compat.v1.all_variables'
+252:17: INFO: Renamed 'tf.initialize_all_variables' to 'tf.compat.v1.initialize_all_variables'
+323:31: INFO: Renamed 'tf.train.global_step' to 'tf.compat.v1.train.global_step'
+333:36: WARNING: *.save requires manual check. (This warning is only applicable if the code saves a tf.Keras model) Keras model.save now saves to the Tensorflow SavedModel format by default, instead of HDF5. To continue saving to HDF5, add the argument save_format='h5' to the save() function.
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+Processing file 'tensorflow_net/E2E-ARNN/nn_basic_layers.py'
+ outputting to 'tensorflow_net_new/E2E-ARNN/nn_basic_layers.py'
+--------------------------------------------------------------------------------
+
+8:9: INFO: Renamed 'tf.variable_scope' to 'tf.compat.v1.variable_scope'
+10:18: WARNING: tf.get_variable requires manual check. tf.get_variable returns ResourceVariables by default in 2.0, which have well-defined semantics and are stricter about shapes. You can disable this behavior by passing use_resource=False, or by calling tf.compat.v1.disable_resource_variables().
+10:18: INFO: Renamed 'tf.get_variable' to 'tf.compat.v1.get_variable'
+11:17: WARNING: tf.get_variable requires manual check. tf.get_variable returns ResourceVariables by default in 2.0, which have well-defined semantics and are stricter about shapes. You can disable this behavior by passing use_resource=False, or by calling tf.compat.v1.disable_resource_variables().
+11:17: INFO: Renamed 'tf.get_variable' to 'tf.compat.v1.get_variable'
+14:14: INFO: Renamed 'tf.nn.xw_plus_b' to 'tf.compat.v1.nn.xw_plus_b'
+23:14: INFO: Renamed 'tf.contrib.rnn.GRUCell' to 'tf.compat.v1.nn.rnn_cell.GRUCell'
+24:14: INFO: Renamed 'tf.contrib.rnn.GRUCell' to 'tf.compat.v1.nn.rnn_cell.GRUCell'
+26:18: INFO: Renamed 'tf.contrib.rnn.MultiRNNCell' to 'tf.compat.v1.nn.rnn_cell.MultiRNNCell'
+28:18: INFO: Renamed 'tf.contrib.rnn.MultiRNNCell' to 'tf.compat.v1.nn.rnn_cell.MultiRNNCell'
+31:14: WARNING: Using member tf.contrib.rnn.DropoutWrapper in deprecated module tf.contrib.rnn. (Manual edit required) tf.contrib.rnn.* has been deprecated, and widely used cells/functions will be moved to tensorflow/addons repository. Please check it there and file Github issues if necessary.
+31:14: ERROR: Using member tf.contrib.rnn.DropoutWrapper in deprecated module tf.contrib. tf.contrib.rnn.DropoutWrapper cannot be converted automatically. tf.contrib will not be distributed with TensorFlow 2.0, please consider an alternative in non-contrib TensorFlow, a community-maintained repository such as tensorflow/addons, or fork the required code.
+32:14: WARNING: Using member tf.contrib.rnn.DropoutWrapper in deprecated module tf.contrib.rnn. (Manual edit required) tf.contrib.rnn.* has been deprecated, and widely used cells/functions will be moved to tensorflow/addons repository. Please check it there and file Github issues if necessary.
+32:14: ERROR: Using member tf.contrib.rnn.DropoutWrapper in deprecated module tf.contrib. tf.contrib.rnn.DropoutWrapper cannot be converted automatically. tf.contrib will not be distributed with TensorFlow 2.0, please consider an alternative in non-contrib TensorFlow, a community-maintained repository such as tensorflow/addons, or fork the required code.
+33:14: WARNING: Using member tf.contrib.rnn.DropoutWrapper in deprecated module tf.contrib.rnn. (Manual edit required) tf.contrib.rnn.* has been deprecated, and widely used cells/functions will be moved to tensorflow/addons repository. Please check it there and file Github issues if necessary.
+33:14: ERROR: Using member tf.contrib.rnn.DropoutWrapper in deprecated module tf.contrib. tf.contrib.rnn.DropoutWrapper cannot be converted automatically. tf.contrib will not be distributed with TensorFlow 2.0, please consider an alternative in non-contrib TensorFlow, a community-maintained repository such as tensorflow/addons, or fork the required code.
+34:14: WARNING: Using member tf.contrib.rnn.DropoutWrapper in deprecated module tf.contrib.rnn. (Manual edit required) tf.contrib.rnn.* has been deprecated, and widely used cells/functions will be moved to tensorflow/addons repository. Please check it there and file Github issues if necessary.
+34:14: ERROR: Using member tf.contrib.rnn.DropoutWrapper in deprecated module tf.contrib. tf.contrib.rnn.DropoutWrapper cannot be converted automatically. tf.contrib will not be distributed with TensorFlow 2.0, please consider an alternative in non-contrib TensorFlow, a community-maintained repository such as tensorflow/addons, or fork the required code.
+41:20: INFO: Renamed 'tf.nn.bidirectional_dynamic_rnn' to 'tf.compat.v1.nn.bidirectional_dynamic_rnn'
+80:18: INFO: Renamed 'tf.contrib.rnn.GRUCell' to 'tf.compat.v1.nn.rnn_cell.GRUCell'
+81:18: INFO: Renamed 'tf.contrib.rnn.GRUCell' to 'tf.compat.v1.nn.rnn_cell.GRUCell'
+94:28: INFO: Renamed 'tf.contrib.rnn.GRUCell' to 'tf.compat.v1.nn.rnn_cell.GRUCell'
+95:28: INFO: Renamed 'tf.contrib.rnn.GRUCell' to 'tf.compat.v1.nn.rnn_cell.GRUCell'
+96:18: INFO: Renamed 'tf.contrib.rnn.MultiRNNCell' to 'tf.compat.v1.nn.rnn_cell.MultiRNNCell'
+97:18: INFO: Renamed 'tf.contrib.rnn.MultiRNNCell' to 'tf.compat.v1.nn.rnn_cell.MultiRNNCell'
+101:14: WARNING: Using member tf.contrib.rnn.DropoutWrapper in deprecated module tf.contrib.rnn. (Manual edit required) tf.contrib.rnn.* has been deprecated, and widely used cells/functions will be moved to tensorflow/addons repository. Please check it there and file Github issues if necessary.
+101:14: ERROR: Using member tf.contrib.rnn.DropoutWrapper in deprecated module tf.contrib. tf.contrib.rnn.DropoutWrapper cannot be converted automatically. tf.contrib will not be distributed with TensorFlow 2.0, please consider an alternative in non-contrib TensorFlow, a community-maintained repository such as tensorflow/addons, or fork the required code.
+102:14: WARNING: Using member tf.contrib.rnn.DropoutWrapper in deprecated module tf.contrib.rnn. (Manual edit required) tf.contrib.rnn.* has been deprecated, and widely used cells/functions will be moved to tensorflow/addons repository. Please check it there and file Github issues if necessary.
+102:14: ERROR: Using member tf.contrib.rnn.DropoutWrapper in deprecated module tf.contrib. tf.contrib.rnn.DropoutWrapper cannot be converted automatically. tf.contrib will not be distributed with TensorFlow 2.0, please consider an alternative in non-contrib TensorFlow, a community-maintained repository such as tensorflow/addons, or fork the required code.
+103:14: WARNING: Using member tf.contrib.rnn.DropoutWrapper in deprecated module tf.contrib.rnn. (Manual edit required) tf.contrib.rnn.* has been deprecated, and widely used cells/functions will be moved to tensorflow/addons repository. Please check it there and file Github issues if necessary.
+103:14: ERROR: Using member tf.contrib.rnn.DropoutWrapper in deprecated module tf.contrib. tf.contrib.rnn.DropoutWrapper cannot be converted automatically. tf.contrib will not be distributed with TensorFlow 2.0, please consider an alternative in non-contrib TensorFlow, a community-maintained repository such as tensorflow/addons, or fork the required code.
+104:14: WARNING: Using member tf.contrib.rnn.DropoutWrapper in deprecated module tf.contrib.rnn. (Manual edit required) tf.contrib.rnn.* has been deprecated, and widely used cells/functions will be moved to tensorflow/addons repository. Please check it there and file Github issues if necessary.
+104:14: ERROR: Using member tf.contrib.rnn.DropoutWrapper in deprecated module tf.contrib. tf.contrib.rnn.DropoutWrapper cannot be converted automatically. tf.contrib will not be distributed with TensorFlow 2.0, please consider an alternative in non-contrib TensorFlow, a community-maintained repository such as tensorflow/addons, or fork the required code.
+112:20: INFO: Renamed 'tf.nn.bidirectional_dynamic_rnn' to 'tf.compat.v1.nn.bidirectional_dynamic_rnn'
+200:26: INFO: Renamed 'tf.random_normal' to 'tf.random.normal'
+201:26: INFO: Renamed 'tf.random_normal' to 'tf.random.normal'
+202:26: INFO: Renamed 'tf.random_normal' to 'tf.random.normal'
+207:31: INFO: Added keywords to args of function 'tf.reduce_sum'
+210:13: INFO: Added keywords to args of function 'tf.reduce_sum'
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+Processing file 'tensorflow_net/E2E-ARNN/test_arnn_sleep.py'
+ outputting to 'tensorflow_net_new/E2E-ARNN/test_arnn_sleep.py'
+--------------------------------------------------------------------------------
+
+29:0: INFO: Renamed 'tf.app.flags' to 'tf.compat.v1.app.flags'
+30:0: INFO: Renamed 'tf.app.flags' to 'tf.compat.v1.app.flags'
+33:0: INFO: Renamed 'tf.app.flags' to 'tf.compat.v1.app.flags'
+34:0: INFO: Renamed 'tf.app.flags' to 'tf.compat.v1.app.flags'
+35:0: INFO: Renamed 'tf.app.flags' to 'tf.compat.v1.app.flags'
+36:0: INFO: Renamed 'tf.app.flags' to 'tf.compat.v1.app.flags'
+37:0: INFO: Renamed 'tf.app.flags' to 'tf.compat.v1.app.flags'
+38:0: INFO: Renamed 'tf.app.flags' to 'tf.compat.v1.app.flags'
+39:0: INFO: Renamed 'tf.app.flags' to 'tf.compat.v1.app.flags'
+40:0: INFO: Renamed 'tf.app.flags' to 'tf.compat.v1.app.flags'
+42:0: INFO: Renamed 'tf.app.flags' to 'tf.compat.v1.app.flags'
+44:0: INFO: Renamed 'tf.app.flags' to 'tf.compat.v1.app.flags'
+46:0: INFO: Renamed 'tf.app.flags' to 'tf.compat.v1.app.flags'
+48:0: INFO: Renamed 'tf.app.flags' to 'tf.compat.v1.app.flags'
+49:0: INFO: Renamed 'tf.app.flags' to 'tf.compat.v1.app.flags'
+51:8: INFO: Renamed 'tf.app.flags' to 'tf.compat.v1.app.flags'
+190:19: INFO: Renamed 'tf.ConfigProto' to 'tf.compat.v1.ConfigProto'
+194:11: INFO: Renamed 'tf.Session' to 'tf.compat.v1.Session'
+200:20: INFO: Renamed 'tf.train.AdamOptimizer' to 'tf.compat.v1.train.AdamOptimizer'
+208:16: INFO: Renamed 'tf.train.Saver' to 'tf.compat.v1.train.Saver'
+208:31: INFO: Renamed 'tf.all_variables' to 'tf.compat.v1.all_variables'
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+Processing file 'tensorflow_net/E2E-ARNN/datagenerator_from_list_v2.py'
+ outputting to 'tensorflow_net_new/E2E-ARNN/datagenerator_from_list_v2.py'
+--------------------------------------------------------------------------------
+
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+Processing file 'tensorflow_net/E2E-ARNN/arnn_sleep.py'
+ outputting to 'tensorflow_net_new/E2E-ARNN/arnn_sleep.py'
+--------------------------------------------------------------------------------
+
+13:23: INFO: Renamed 'tf.placeholder' to 'tf.compat.v1.placeholder'
+14:23: INFO: Renamed 'tf.placeholder' to 'tf.compat.v1.placeholder'
+15:37: INFO: Renamed 'tf.placeholder' to 'tf.compat.v1.placeholder'
+17:29: INFO: Renamed 'tf.placeholder' to 'tf.compat.v1.placeholder'
+29:34: INFO: Renamed 'tf.variable_scope' to 'tf.compat.v1.variable_scope'
+33:36: INFO: Renamed 'tf.random_normal' to 'tf.random.normal'
+42:38: INFO: Renamed 'tf.variable_scope' to 'tf.compat.v1.variable_scope'
+46:40: INFO: Renamed 'tf.random_normal' to 'tf.random.normal'
+55:38: INFO: Renamed 'tf.variable_scope' to 'tf.compat.v1.variable_scope'
+59:40: INFO: Renamed 'tf.random_normal' to 'tf.random.normal'
+75:34: INFO: Renamed 'tf.variable_scope' to 'tf.compat.v1.variable_scope'
+88:34: INFO: Renamed 'tf.variable_scope' to 'tf.compat.v1.variable_scope'
+93:34: INFO: Renamed 'tf.variable_scope' to 'tf.compat.v1.variable_scope'
+99:30: INFO: Added keywords to args of function 'tf.argmax'
+102:34: INFO: `name` passed to `name_scope`. Because you may be re-entering an existing scope, it is not safe to convert automatically,  the v2 name_scope does not support re-entering scopes by name.
+
+102:34: INFO: Renamed 'tf.name_scope' to 'tf.compat.v1.name_scope'
+103:31: INFO: Changing labels arg of tf.nn.softmax_cross_entropy_with_logits to tf.stop_gradient(labels). Please check this transformation.
+
+104:31: INFO: Added keywords to args of function 'tf.reduce_sum'
+107:34: INFO: `name` passed to `name_scope`. Because you may be re-entering an existing scope, it is not safe to convert automatically,  the v2 name_scope does not support re-entering scopes by name.
+
+107:34: INFO: Renamed 'tf.name_scope' to 'tf.compat.v1.name_scope'
+108:21: INFO: Renamed 'tf.trainable_variables' to 'tf.compat.v1.trainable_variables'
+109:30: INFO: Renamed 'tf.get_collection' to 'tf.compat.v1.get_collection'
+109:48: INFO: Renamed 'tf.GraphKeys' to 'tf.compat.v1.GraphKeys'
+110:30: INFO: Renamed 'tf.get_collection' to 'tf.compat.v1.get_collection'
+110:48: INFO: Renamed 'tf.GraphKeys' to 'tf.compat.v1.GraphKeys'
+111:30: INFO: Renamed 'tf.get_collection' to 'tf.compat.v1.get_collection'
+111:48: INFO: Renamed 'tf.GraphKeys' to 'tf.compat.v1.GraphKeys'
+116:13: INFO: `name` passed to `name_scope`. Because you may be re-entering an existing scope, it is not safe to convert automatically,  the v2 name_scope does not support re-entering scopes by name.
+
+116:13: INFO: Renamed 'tf.name_scope' to 'tf.compat.v1.name_scope'
+117:60: INFO: Added keywords to args of function 'tf.argmax'
+118:28: INFO: Added keywords to args of function 'tf.reduce_mean'
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+Processing file 'tensorflow_net/E2E-ARNN/arnn_sleep_config.py'
+ outputting to 'tensorflow_net_new/E2E-ARNN/arnn_sleep_config.py'
+--------------------------------------------------------------------------------
+
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+Processing file 'tensorflow_net/E2E-ARNN/filterbank_shape.py'
+ outputting to 'tensorflow_net_new/E2E-ARNN/filterbank_shape.py'
+--------------------------------------------------------------------------------
+
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+Processing file 'tensorflow_net/SeqSleepNet/test_seqsleepnet.py'
+ outputting to 'tensorflow_net_new/SeqSleepNet/test_seqsleepnet.py'
+--------------------------------------------------------------------------------
+
+29:0: INFO: Renamed 'tf.app.flags' to 'tf.compat.v1.app.flags'
+30:0: INFO: Renamed 'tf.app.flags' to 'tf.compat.v1.app.flags'
+33:0: INFO: Renamed 'tf.app.flags' to 'tf.compat.v1.app.flags'
+34:0: INFO: Renamed 'tf.app.flags' to 'tf.compat.v1.app.flags'
+35:0: INFO: Renamed 'tf.app.flags' to 'tf.compat.v1.app.flags'
+36:0: INFO: Renamed 'tf.app.flags' to 'tf.compat.v1.app.flags'
+37:0: INFO: Renamed 'tf.app.flags' to 'tf.compat.v1.app.flags'
+38:0: INFO: Renamed 'tf.app.flags' to 'tf.compat.v1.app.flags'
+39:0: INFO: Renamed 'tf.app.flags' to 'tf.compat.v1.app.flags'
+40:0: INFO: Renamed 'tf.app.flags' to 'tf.compat.v1.app.flags'
+42:0: INFO: Renamed 'tf.app.flags' to 'tf.compat.v1.app.flags'
+44:0: INFO: Renamed 'tf.app.flags' to 'tf.compat.v1.app.flags'
+46:0: INFO: Renamed 'tf.app.flags' to 'tf.compat.v1.app.flags'
+48:0: INFO: Renamed 'tf.app.flags' to 'tf.compat.v1.app.flags'
+49:0: INFO: Renamed 'tf.app.flags' to 'tf.compat.v1.app.flags'
+50:0: INFO: Renamed 'tf.app.flags' to 'tf.compat.v1.app.flags'
+52:8: INFO: Renamed 'tf.app.flags' to 'tf.compat.v1.app.flags'
+192:18: INFO: Renamed 'tf.GPUOptions' to 'tf.compat.v1.GPUOptions'
+193:19: INFO: Renamed 'tf.ConfigProto' to 'tf.compat.v1.ConfigProto'
+198:11: INFO: Renamed 'tf.Session' to 'tf.compat.v1.Session'
+203:21: INFO: Renamed 'tf.get_collection' to 'tf.compat.v1.get_collection'
+203:39: INFO: Renamed 'tf.GraphKeys' to 'tf.compat.v1.GraphKeys'
+207:24: INFO: Renamed 'tf.train.AdamOptimizer' to 'tf.compat.v1.train.AdamOptimizer'
+215:16: INFO: Renamed 'tf.train.Saver' to 'tf.compat.v1.train.Saver'
+215:31: INFO: Renamed 'tf.all_variables' to 'tf.compat.v1.all_variables'
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+Processing file 'tensorflow_net/SeqSleepNet/seqsleepnet_sleep_config.py'
+ outputting to 'tensorflow_net_new/SeqSleepNet/seqsleepnet_sleep_config.py'
+--------------------------------------------------------------------------------
+
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+Processing file 'tensorflow_net/SeqSleepNet/nn_basic_layers.py'
+ outputting to 'tensorflow_net_new/SeqSleepNet/nn_basic_layers.py'
+--------------------------------------------------------------------------------
+
+13:9: INFO: Renamed 'tf.variable_scope' to 'tf.compat.v1.variable_scope'
+15:18: WARNING: tf.get_variable requires manual check. tf.get_variable returns ResourceVariables by default in 2.0, which have well-defined semantics and are stricter about shapes. You can disable this behavior by passing use_resource=False, or by calling tf.compat.v1.disable_resource_variables().
+15:18: INFO: Renamed 'tf.get_variable' to 'tf.compat.v1.get_variable'
+16:17: WARNING: tf.get_variable requires manual check. tf.get_variable returns ResourceVariables by default in 2.0, which have well-defined semantics and are stricter about shapes. You can disable this behavior by passing use_resource=False, or by calling tf.compat.v1.disable_resource_variables().
+16:17: INFO: Renamed 'tf.get_variable' to 'tf.compat.v1.get_variable'
+19:14: INFO: Renamed 'tf.nn.xw_plus_b' to 'tf.compat.v1.nn.xw_plus_b'
+60:18: INFO: Renamed 'tf.contrib.rnn.MultiRNNCell' to 'tf.compat.v1.nn.rnn_cell.MultiRNNCell'
+61:18: INFO: Renamed 'tf.contrib.rnn.MultiRNNCell' to 'tf.compat.v1.nn.rnn_cell.MultiRNNCell'
+65:14: WARNING: Using member tf.contrib.rnn.DropoutWrapper in deprecated module tf.contrib.rnn. (Manual edit required) tf.contrib.rnn.* has been deprecated, and widely used cells/functions will be moved to tensorflow/addons repository. Please check it there and file Github issues if necessary.
+65:14: ERROR: Using member tf.contrib.rnn.DropoutWrapper in deprecated module tf.contrib. tf.contrib.rnn.DropoutWrapper cannot be converted automatically. tf.contrib will not be distributed with TensorFlow 2.0, please consider an alternative in non-contrib TensorFlow, a community-maintained repository such as tensorflow/addons, or fork the required code.
+66:14: WARNING: Using member tf.contrib.rnn.DropoutWrapper in deprecated module tf.contrib.rnn. (Manual edit required) tf.contrib.rnn.* has been deprecated, and widely used cells/functions will be moved to tensorflow/addons repository. Please check it there and file Github issues if necessary.
+66:14: ERROR: Using member tf.contrib.rnn.DropoutWrapper in deprecated module tf.contrib. tf.contrib.rnn.DropoutWrapper cannot be converted automatically. tf.contrib will not be distributed with TensorFlow 2.0, please consider an alternative in non-contrib TensorFlow, a community-maintained repository such as tensorflow/addons, or fork the required code.
+67:14: WARNING: Using member tf.contrib.rnn.DropoutWrapper in deprecated module tf.contrib.rnn. (Manual edit required) tf.contrib.rnn.* has been deprecated, and widely used cells/functions will be moved to tensorflow/addons repository. Please check it there and file Github issues if necessary.
+67:14: ERROR: Using member tf.contrib.rnn.DropoutWrapper in deprecated module tf.contrib. tf.contrib.rnn.DropoutWrapper cannot be converted automatically. tf.contrib will not be distributed with TensorFlow 2.0, please consider an alternative in non-contrib TensorFlow, a community-maintained repository such as tensorflow/addons, or fork the required code.
+68:14: WARNING: Using member tf.contrib.rnn.DropoutWrapper in deprecated module tf.contrib.rnn. (Manual edit required) tf.contrib.rnn.* has been deprecated, and widely used cells/functions will be moved to tensorflow/addons repository. Please check it there and file Github issues if necessary.
+68:14: ERROR: Using member tf.contrib.rnn.DropoutWrapper in deprecated module tf.contrib. tf.contrib.rnn.DropoutWrapper cannot be converted automatically. tf.contrib will not be distributed with TensorFlow 2.0, please consider an alternative in non-contrib TensorFlow, a community-maintained repository such as tensorflow/addons, or fork the required code.
+74:18: INFO: Renamed 'tf.contrib.rnn.GRUCell' to 'tf.compat.v1.nn.rnn_cell.GRUCell'
+75:18: INFO: Renamed 'tf.contrib.rnn.GRUCell' to 'tf.compat.v1.nn.rnn_cell.GRUCell'
+88:28: INFO: Renamed 'tf.contrib.rnn.GRUCell' to 'tf.compat.v1.nn.rnn_cell.GRUCell'
+89:28: INFO: Renamed 'tf.contrib.rnn.GRUCell' to 'tf.compat.v1.nn.rnn_cell.GRUCell'
+90:18: INFO: Renamed 'tf.contrib.rnn.MultiRNNCell' to 'tf.compat.v1.nn.rnn_cell.MultiRNNCell'
+91:18: INFO: Renamed 'tf.contrib.rnn.MultiRNNCell' to 'tf.compat.v1.nn.rnn_cell.MultiRNNCell'
+95:14: WARNING: Using member tf.contrib.rnn.DropoutWrapper in deprecated module tf.contrib.rnn. (Manual edit required) tf.contrib.rnn.* has been deprecated, and widely used cells/functions will be moved to tensorflow/addons repository. Please check it there and file Github issues if necessary.
+95:14: ERROR: Using member tf.contrib.rnn.DropoutWrapper in deprecated module tf.contrib. tf.contrib.rnn.DropoutWrapper cannot be converted automatically. tf.contrib will not be distributed with TensorFlow 2.0, please consider an alternative in non-contrib TensorFlow, a community-maintained repository such as tensorflow/addons, or fork the required code.
+96:14: WARNING: Using member tf.contrib.rnn.DropoutWrapper in deprecated module tf.contrib.rnn. (Manual edit required) tf.contrib.rnn.* has been deprecated, and widely used cells/functions will be moved to tensorflow/addons repository. Please check it there and file Github issues if necessary.
+96:14: ERROR: Using member tf.contrib.rnn.DropoutWrapper in deprecated module tf.contrib. tf.contrib.rnn.DropoutWrapper cannot be converted automatically. tf.contrib will not be distributed with TensorFlow 2.0, please consider an alternative in non-contrib TensorFlow, a community-maintained repository such as tensorflow/addons, or fork the required code.
+97:14: WARNING: Using member tf.contrib.rnn.DropoutWrapper in deprecated module tf.contrib.rnn. (Manual edit required) tf.contrib.rnn.* has been deprecated, and widely used cells/functions will be moved to tensorflow/addons repository. Please check it there and file Github issues if necessary.
+97:14: ERROR: Using member tf.contrib.rnn.DropoutWrapper in deprecated module tf.contrib. tf.contrib.rnn.DropoutWrapper cannot be converted automatically. tf.contrib will not be distributed with TensorFlow 2.0, please consider an alternative in non-contrib TensorFlow, a community-maintained repository such as tensorflow/addons, or fork the required code.
+98:14: WARNING: Using member tf.contrib.rnn.DropoutWrapper in deprecated module tf.contrib.rnn. (Manual edit required) tf.contrib.rnn.* has been deprecated, and widely used cells/functions will be moved to tensorflow/addons repository. Please check it there and file Github issues if necessary.
+98:14: ERROR: Using member tf.contrib.rnn.DropoutWrapper in deprecated module tf.contrib. tf.contrib.rnn.DropoutWrapper cannot be converted automatically. tf.contrib will not be distributed with TensorFlow 2.0, please consider an alternative in non-contrib TensorFlow, a community-maintained repository such as tensorflow/addons, or fork the required code.
+106:20: INFO: Renamed 'tf.nn.bidirectional_dynamic_rnn' to 'tf.compat.v1.nn.bidirectional_dynamic_rnn'
+194:26: INFO: Renamed 'tf.random_normal' to 'tf.random.normal'
+195:26: INFO: Renamed 'tf.random_normal' to 'tf.random.normal'
+196:26: INFO: Renamed 'tf.random_normal' to 'tf.random.normal'
+201:31: INFO: Added keywords to args of function 'tf.reduce_sum'
+204:13: INFO: Added keywords to args of function 'tf.reduce_sum'
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+Processing file 'tensorflow_net/SeqSleepNet/datagenerator_from_list_v2.py'
+ outputting to 'tensorflow_net_new/SeqSleepNet/datagenerator_from_list_v2.py'
+--------------------------------------------------------------------------------
+
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+Processing file 'tensorflow_net/SeqSleepNet/seqsleepnet_sleep.py'
+ outputting to 'tensorflow_net_new/SeqSleepNet/seqsleepnet_sleep.py'
+--------------------------------------------------------------------------------
+
+13:23: INFO: Renamed 'tf.placeholder' to 'tf.compat.v1.placeholder'
+14:23: INFO: Renamed 'tf.placeholder' to 'tf.compat.v1.placeholder'
+15:37: INFO: Renamed 'tf.placeholder' to 'tf.compat.v1.placeholder'
+16:26: INFO: Renamed 'tf.placeholder' to 'tf.compat.v1.placeholder'
+18:29: INFO: Renamed 'tf.placeholder' to 'tf.compat.v1.placeholder'
+19:29: INFO: Renamed 'tf.placeholder' to 'tf.compat.v1.placeholder'
+31:34: INFO: Renamed 'tf.variable_scope' to 'tf.compat.v1.variable_scope'
+35:36: INFO: Renamed 'tf.random_normal' to 'tf.random.normal'
+44:38: INFO: Renamed 'tf.variable_scope' to 'tf.compat.v1.variable_scope'
+48:40: INFO: Renamed 'tf.random_normal' to 'tf.random.normal'
+57:38: INFO: Renamed 'tf.variable_scope' to 'tf.compat.v1.variable_scope'
+61:40: INFO: Renamed 'tf.random_normal' to 'tf.random.normal'
+80:34: INFO: Renamed 'tf.variable_scope' to 'tf.compat.v1.variable_scope'
+95:34: INFO: Renamed 'tf.variable_scope' to 'tf.compat.v1.variable_scope'
+102:34: INFO: Renamed 'tf.variable_scope' to 'tf.compat.v1.variable_scope'
+119:34: INFO: Renamed 'tf.variable_scope' to 'tf.compat.v1.variable_scope'
+126:25: INFO: Added keywords to args of function 'tf.argmax'
+132:34: INFO: `name` passed to `name_scope`. Because you may be re-entering an existing scope, it is not safe to convert automatically,  the v2 name_scope does not support re-entering scopes by name.
+
+132:34: INFO: Renamed 'tf.name_scope' to 'tf.compat.v1.name_scope'
+134:32: INFO: Changing labels arg of tf.nn.softmax_cross_entropy_with_logits to tf.stop_gradient(labels). Please check this transformation.
+
+135:32: INFO: Added keywords to args of function 'tf.reduce_sum'
+140:34: INFO: `name` passed to `name_scope`. Because you may be re-entering an existing scope, it is not safe to convert automatically,  the v2 name_scope does not support re-entering scopes by name.
+
+140:34: INFO: Renamed 'tf.name_scope' to 'tf.compat.v1.name_scope'
+141:21: INFO: Renamed 'tf.trainable_variables' to 'tf.compat.v1.trainable_variables'
+142:30: INFO: Renamed 'tf.get_collection' to 'tf.compat.v1.get_collection'
+142:48: INFO: Renamed 'tf.GraphKeys' to 'tf.compat.v1.GraphKeys'
+143:30: INFO: Renamed 'tf.get_collection' to 'tf.compat.v1.get_collection'
+143:48: INFO: Renamed 'tf.GraphKeys' to 'tf.compat.v1.GraphKeys'
+144:30: INFO: Renamed 'tf.get_collection' to 'tf.compat.v1.get_collection'
+144:48: INFO: Renamed 'tf.GraphKeys' to 'tf.compat.v1.GraphKeys'
+151:34: INFO: `name` passed to `name_scope`. Because you may be re-entering an existing scope, it is not safe to convert automatically,  the v2 name_scope does not support re-entering scopes by name.
+
+151:34: INFO: Renamed 'tf.name_scope' to 'tf.compat.v1.name_scope'
+153:69: INFO: Added keywords to args of function 'tf.argmax'
+154:29: INFO: Added keywords to args of function 'tf.reduce_mean'
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+Processing file 'tensorflow_net/SeqSleepNet/bnlstm.py'
+ outputting to 'tensorflow_net_new/SeqSleepNet/bnlstm.py'
+--------------------------------------------------------------------------------
+
+4:10: INFO: Renamed 'tf.nn.rnn_cell.RNNCell' to 'tf.compat.v1.nn.rnn_cell.RNNCell'
+30:13: INFO: Renamed 'tf.variable_scope' to 'tf.compat.v1.variable_scope'
+33:20: WARNING: tf.get_variable requires manual check. tf.get_variable returns ResourceVariables by default in 2.0, which have well-defined semantics and are stricter about shapes. You can disable this behavior by passing use_resource=False, or by calling tf.compat.v1.disable_resource_variables().
+33:20: INFO: Renamed 'tf.get_variable' to 'tf.compat.v1.get_variable'
+33:65: INFO: tf.constant_initializer requires manual check. Initializers no longer have the dtype argument in the constructor or partition_info argument in the __call__ method.
+The calls have been converted to compat.v1 for safety (even though they may already have been correct).
+33:65: INFO: Renamed 'tf.constant_initializer' to 'tf.compat.v1.constant_initializer'
+37:25: WARNING: tf.get_variable requires manual check. tf.get_variable returns ResourceVariables by default in 2.0, which have well-defined semantics and are stricter about shapes. You can disable this behavior by passing use_resource=False, or by calling tf.compat.v1.disable_resource_variables().
+37:25: INFO: Renamed 'tf.get_variable' to 'tf.compat.v1.get_variable'
+39:25: WARNING: tf.get_variable requires manual check. tf.get_variable returns ResourceVariables by default in 2.0, which have well-defined semantics and are stricter about shapes. You can disable this behavior by passing use_resource=False, or by calling tf.compat.v1.disable_resource_variables().
+39:25: INFO: Renamed 'tf.get_variable' to 'tf.compat.v1.get_variable'
+39:71: INFO: tf.zeros_initializer requires manual check. Initializers no longer have the dtype argument in the constructor or partition_info argument in the __call__ method.
+The calls have been converted to compat.v1 for safety (even though they may already have been correct).
+39:71: INFO: Renamed 'tf.zeros_initializer' to 'tf.compat.v1.zeros_initializer'
+41:33: WARNING: tf.get_variable requires manual check. tf.get_variable returns ResourceVariables by default in 2.0, which have well-defined semantics and are stricter about shapes. You can disable this behavior by passing use_resource=False, or by calling tf.compat.v1.disable_resource_variables().
+41:33: INFO: Renamed 'tf.get_variable' to 'tf.compat.v1.get_variable'
+41:101: INFO: tf.zeros_initializer requires manual check. Initializers no longer have the dtype argument in the constructor or partition_info argument in the __call__ method.
+The calls have been converted to compat.v1 for safety (even though they may already have been correct).
+41:101: INFO: Renamed 'tf.zeros_initializer' to 'tf.compat.v1.zeros_initializer'
+42:32: WARNING: tf.get_variable requires manual check. tf.get_variable returns ResourceVariables by default in 2.0, which have well-defined semantics and are stricter about shapes. You can disable this behavior by passing use_resource=False, or by calling tf.compat.v1.disable_resource_variables().
+42:32: INFO: Renamed 'tf.get_variable' to 'tf.compat.v1.get_variable'
+42:99: INFO: tf.ones_initializer requires manual check. Initializers no longer have the dtype argument in the constructor or partition_info argument in the __call__ method.
+The calls have been converted to compat.v1 for safety (even though they may already have been correct).
+42:99: INFO: Renamed 'tf.ones_initializer' to 'tf.compat.v1.ones_initializer'
+49:36: INFO: Added keywords to args of function 'tf.nn.moments'
+60:19: INFO: Added keywords to args of function 'tf.cond'
+63:13: INFO: Renamed 'tf.variable_scope' to 'tf.compat.v1.variable_scope'
+68:19: WARNING: tf.get_variable requires manual check. tf.get_variable returns ResourceVariables by default in 2.0, which have well-defined semantics and are stricter about shapes. You can disable this behavior by passing use_resource=False, or by calling tf.compat.v1.disable_resource_variables().
+68:19: INFO: Renamed 'tf.get_variable' to 'tf.compat.v1.get_variable'
+71:19: WARNING: tf.get_variable requires manual check. tf.get_variable returns ResourceVariables by default in 2.0, which have well-defined semantics and are stricter about shapes. You can disable this behavior by passing use_resource=False, or by calling tf.compat.v1.disable_resource_variables().
+71:19: INFO: Renamed 'tf.get_variable' to 'tf.compat.v1.get_variable'
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+Processing file 'tensorflow_net/SeqSleepNet/filterbank_shape.py'
+ outputting to 'tensorflow_net_new/SeqSleepNet/filterbank_shape.py'
+--------------------------------------------------------------------------------
+
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+Processing file 'tensorflow_net/SeqSleepNet/train_seqsleepnet.py'
+ outputting to 'tensorflow_net_new/SeqSleepNet/train_seqsleepnet.py'
+--------------------------------------------------------------------------------
+
+28:0: INFO: Renamed 'tf.app.flags' to 'tf.compat.v1.app.flags'
+29:0: INFO: Renamed 'tf.app.flags' to 'tf.compat.v1.app.flags'
+32:0: INFO: Renamed 'tf.app.flags' to 'tf.compat.v1.app.flags'
+33:0: INFO: Renamed 'tf.app.flags' to 'tf.compat.v1.app.flags'
+34:0: INFO: Renamed 'tf.app.flags' to 'tf.compat.v1.app.flags'
+35:0: INFO: Renamed 'tf.app.flags' to 'tf.compat.v1.app.flags'
+36:0: INFO: Renamed 'tf.app.flags' to 'tf.compat.v1.app.flags'
+37:0: INFO: Renamed 'tf.app.flags' to 'tf.compat.v1.app.flags'
+38:0: INFO: Renamed 'tf.app.flags' to 'tf.compat.v1.app.flags'
+39:0: INFO: Renamed 'tf.app.flags' to 'tf.compat.v1.app.flags'
+40:0: INFO: Renamed 'tf.app.flags' to 'tf.compat.v1.app.flags'
+41:0: INFO: Renamed 'tf.app.flags' to 'tf.compat.v1.app.flags'
+42:0: INFO: Renamed 'tf.app.flags' to 'tf.compat.v1.app.flags'
+44:0: INFO: Renamed 'tf.app.flags' to 'tf.compat.v1.app.flags'
+46:0: INFO: Renamed 'tf.app.flags' to 'tf.compat.v1.app.flags'
+48:0: INFO: Renamed 'tf.app.flags' to 'tf.compat.v1.app.flags'
+50:0: INFO: Renamed 'tf.app.flags' to 'tf.compat.v1.app.flags'
+51:0: INFO: Renamed 'tf.app.flags' to 'tf.compat.v1.app.flags'
+52:0: INFO: Renamed 'tf.app.flags' to 'tf.compat.v1.app.flags'
+54:8: INFO: Renamed 'tf.app.flags' to 'tf.compat.v1.app.flags'
+232:18: INFO: Renamed 'tf.GPUOptions' to 'tf.compat.v1.GPUOptions'
+233:19: INFO: Renamed 'tf.ConfigProto' to 'tf.compat.v1.ConfigProto'
+238:11: INFO: Renamed 'tf.Session' to 'tf.compat.v1.Session'
+243:21: INFO: Renamed 'tf.get_collection' to 'tf.compat.v1.get_collection'
+243:39: INFO: Renamed 'tf.GraphKeys' to 'tf.compat.v1.GraphKeys'
+247:24: INFO: Renamed 'tf.train.AdamOptimizer' to 'tf.compat.v1.train.AdamOptimizer'
+254:16: INFO: Renamed 'tf.train.Saver' to 'tf.compat.v1.train.Saver'
+254:31: INFO: Renamed 'tf.all_variables' to 'tf.compat.v1.all_variables'
+258:17: INFO: Renamed 'tf.initialize_all_variables' to 'tf.compat.v1.initialize_all_variables'
+350:31: INFO: Renamed 'tf.train.global_step' to 'tf.compat.v1.train.global_step'
+360:36: WARNING: *.save requires manual check. (This warning is only applicable if the code saves a tf.Keras model) Keras model.save now saves to the Tensorflow SavedModel format by default, instead of HDF5. To continue saving to HDF5, add the argument save_format='h5' to the save() function.
+--------------------------------------------------------------------------------
+

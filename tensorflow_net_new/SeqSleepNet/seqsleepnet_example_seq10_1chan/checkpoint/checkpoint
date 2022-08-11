@@ -1,0 +1,2 @@
+model_checkpoint_path: "/home/ron/ron/SeqSleepNet/tensorflow_net_new/SeqSleepNet/seqsleepnet_example_seq10_1chan/checkpoint/model_step500.ckpt"
+all_model_checkpoint_paths: "/home/ron/ron/SeqSleepNet/tensorflow_net_new/SeqSleepNet/seqsleepnet_example_seq10_1chan/checkpoint/model_step500.ckpt"
