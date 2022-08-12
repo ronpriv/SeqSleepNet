@@ -5,7 +5,8 @@ clear all
 close all
 clc
 
-load('./data_split_eval.mat');
+%load('./data_split_eval.mat');
+% I will do this manually instead
 
 mat_path = './mat/';
 Nfold = 20;
@@ -17,13 +18,23 @@ if(~exist(tf_path, 'dir'))
     mkdir(tf_path);
 end
 
+num_files = 142;
+train_num = 122;
+eval_num = 10;
+test_num = 10;
+
 for s = 1 : Nfold
 
     disp(['Fold: ', num2str(s),'/',num2str(Nfold)]);
+
+    train_s = randperm(num_files,train_num);
+    eval_s = randperm(num_files,eval_num);
+    test_s = randperm(num_files,test_num);
+
     
-	train_s = train_sub{s};
-    eval_s = eval_sub{s};
-    test_s = test_sub{s};
+% 	train_s = train_sub{s};
+%     eval_s = eval_sub{s};
+%     test_s = test_sub{s};
     
     train_filename = [tf_path, 'train_list_n', num2str(s),'.txt'];
     fid = fopen(train_filename,'wt');
@@ -74,9 +85,14 @@ for s = 1 : Nfold
 
     disp(['Fold: ', num2str(s),'/',num2str(Nfold)]);
     
-	train_s = train_sub{s};
-    eval_s = eval_sub{s};
-    test_s = test_sub{s};
+    train_s = randperm(num_files,train_num);
+    eval_s = randperm(num_files,eval_num);
+    test_s = randperm(num_files,test_num);
+
+    
+% 	train_s = train_sub{s};
+%     eval_s = eval_sub{s};
+%     test_s = test_sub{s};
     
     train_filename = [tf_path, 'train_list_n', num2str(s),'.txt'];
     fid = fopen(train_filename,'wt');
@@ -127,10 +143,16 @@ for s = 1 : Nfold
 
     disp(['Fold: ', num2str(s),'/',num2str(Nfold)]);
     
-	train_s = train_sub{s};
-    eval_s = eval_sub{s};
-    test_s = test_sub{s};
+    train_s = randperm(num_files,train_num);
+    eval_s = randperm(num_files,eval_num);
+    test_s = randperm(num_files,test_num);
+
     
+% 	train_s = train_sub{s};
+%     eval_s = eval_sub{s};
+%     test_s = test_sub{s};
+
+
     train_filename = [tf_path, 'train_list_n', num2str(s),'.txt'];
     fid = fopen(train_filename,'wt');
     for i = 1 : numel(train_s)
