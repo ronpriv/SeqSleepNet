@@ -22,29 +22,13 @@ CLASSES = {'W','R','S1','S2','S3'};
     fls = dir([data_source, '*.edf']);
     fls = arrayfun(@(x) x.name,fls,'UniformOutput',false);
 
-    for f = 101:length(fls)
+    for f = 1:length(fls)
         
-        %% Loading data
+        % Loading data
         [hdr, record] = edfread([data_source, fls{f}]);
         if (exist(strcat(raw_data_path,strip(fls{f}(7:end-4)),'.mat'),'file'))
-            display_msg = strcat('mat file for id ' , strip(fls{f}(7:end-4)), ' exists already');
-            disp(display_msg);
             continue;
         end
-        
-        %% Figuring out annotations
-        current_id = strip(fls{f}(7:end-4));
-        hrv_file_dir = '../data/shhs_data/shhs/polysomnography/shhs1-hrv-5min-0.17.0.csv';
-        annotations = readmatrix(hrv_file_dir);
-        annotations = annotations(:,[1 21:30]);
-        relavant_idxes = find(annotations(:,1) == str2num(current_id));
-        annotations = annotations(relavant_idxes,2:end);
-        if(isempty(annotations)) % if no annotations, kill this id
-            display_msg = strcat('Skipping record, no annotations for id ',current_id);
-            disp(display_msg)
-            continue;
-        end
-        labels = (reshape(annotations.',1,[]))';
         
         patinfo.ch_orig = cell(2,3);
         patinfo.fs_orig = nan(2,3);
@@ -158,12 +142,6 @@ CLASSES = {'W','R','S1','S2','S3'};
         clear fsemg idxemg l
         clear record info idxrow
         
-        if (isempty(eeg) || isempty(eog) || isempty(emg))
-            warning_msg = strcat('Skipping record, missing eeg\eog\emg signals for id ',current_id);
-            warning(warning_msg);
-            continue;
-        end
-        
         %% Resampling signals
         fss = round(patinfo.fs_orig(1,:));
         
@@ -232,12 +210,11 @@ CLASSES = {'W','R','S1','S2','S3'};
         relavant_idxes = find(annotations(:,1) == str2num(current_id));
         annotations = annotations(relavant_idxes,2:end);
         if(isempty(annotations)) % if no annotations, kill this id
-            display_msg = strcat('Skipping record, no annotations for id ',current_id);
-            disp(display_msg)
+            warning_msg = strcat('Skipping record, no annotations for id ',current_id);
+            warning(warning_ms)
             continue;
         end
         labels = (reshape(annotations.',1,[]))';
-        % moved labels to top for skipping useless ids
 %         
 %         annfile = [hrv_file_dir, 'annotations/', strip(fls{f}(1:end-7))];
 %         annfilesaf = [annfile '.saf'];      
@@ -324,7 +301,6 @@ CLASSES = {'W','R','S1','S2','S3'};
         %Saving results
         data = single(data);
         save([raw_data_path, strip(fls{f}(7:end-4))],'data','labels','patinfo')
-        disp(strcat(strip(fls{f}(7:end-4)),' writen to file'));
         clear infotxt startsamp lastsamp recstart stage anntm rem data labels patinfo signals r
     end
 

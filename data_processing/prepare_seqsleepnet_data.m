@@ -14,7 +14,7 @@ overlap = 1;
 nfft = 2^nextpow2(win_size*fs);
 
 % list all subjects
-listing = dir([raw_data_path, 'SS*']);
+listing = dir([raw_data_path, '2*']);
 
 for i = 1 : numel(listing)
 	disp(listing(i).name)
